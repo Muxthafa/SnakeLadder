@@ -28,6 +28,13 @@ public class LadderSnake {
 						pos = pos-dice;
 						break;
 		}
+		count++;
+		if(pos > 100) {			//ensure player gets exact winning position 100
+			pos = pos-dice;
+		}
+		if(pos<0) {
+			pos=0;
+		}
 		}
 	}
 }
