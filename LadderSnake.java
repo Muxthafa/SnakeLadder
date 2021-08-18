@@ -11,6 +11,21 @@ public class LadderSnake {
 		
 		int dice = ((int)(Math.random()*10)%6)+1; //player rolls the dice
 		System.out.println("Die Number:"+dice);
+		
+		int choice = ((int)(Math.random()*10)%3)+1;
+		System.out.println("Option is:"+choice);
+		
+		switch(choice)
+		{
+		case no_play : System.out.println("No play");
+						break;
+		case Ladder : System.out.println("Moving ahead by "+dice+" and current position is: "+pos);
+						pos = pos+dice;
+						break;
+		case Snake : System.out.println("Moving behind by "+dice+"and current position is: "+pos);
+						pos = pos-dice;
+						break;
+		}
 	}
 }
 
