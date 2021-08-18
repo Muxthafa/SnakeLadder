@@ -9,6 +9,8 @@ public class LadderSnake {
 		int pos = 0;
 		int count=0;
 		
+		while(pos != 100) {
+		
 		int dice = ((int)(Math.random()*10)%6)+1; //player rolls the dice
 		System.out.println("Die Number:"+dice);
 		
@@ -25,6 +27,7 @@ public class LadderSnake {
 		case Snake : System.out.println("Moving behind by "+dice+"and current position is: "+pos);
 						pos = pos-dice;
 						break;
+		}
 		}
 	}
 }
