@@ -8,6 +8,9 @@ public class LadderSnake {
 		System.out.println("Welcome to snake ladder problem");
 		int pos = 0;
 		int count=0;
+		
+		int dice = ((int)(Math.random()*10)%6)+1; //player rolls the dice
+		System.out.println("Die Number:"+dice);
 	}
 }
 
