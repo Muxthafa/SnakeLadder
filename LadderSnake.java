@@ -36,6 +36,8 @@ public class LadderSnake {
 			pos=0;
 		}
 		}
+		System.out.println("Your current position is: "+pos+" Congratulations!! You have won!!!");
+		System.out.println("Number of times dice thrown is: "+count);
 	}
 }
 
